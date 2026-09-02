@@ -1,0 +1,156 @@
+/* Main heading */
+.H1 {
+    text-align: center;
+}
+#warn{
+    display: none;
+}
+/* Page */
+body {
+    background-color: rgb(0, 0, 32);
+    color: white;
+    font-family: "Climate Crisis", Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Circle */
+#circle {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    color: yellow;
+    border-radius: 50%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+
+    box-shadow: 0 0 20px 15px rgba(255, 255, 0, 0.35);
+
+    animation: identifier 5s ease-in-out infinite alternate;
+}
+
+/* Circle animation */
+@keyframes identifier {
+    from {
+        transform: translateY(20vh);
+    }
+
+    to {
+        transform: translateY(35vh);
+    }
+}
+
+/* Main container */
+#MainHolder {
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
+    text-align: center;
+
+    margin-left: 70px;
+    margin-right: 70px;
+
+    padding: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Unb text */
+.unb {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Paragraphs */
+p {
+    font-weight: 300;
+}
+
+/* Button holder */
+#BTNH {
+    margin: 40px 0;
+}
+
+/* Buttons */
+button {
+    margin: 0 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+    border: 2px solid white;
+
+    cursor: pointer;
+
+    transition: 500ms ease;
+}
+
+/* Button hover */
+button:hover {
+    border-radius: 30px;
+    transform: scale(1.05);
+}
+
+/* Tablets / smaller screens */
+@media screen and (max-width: 940px) {
+    #H1M {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+    #MainHolder {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+    button{
+        margin-left: 5PX;
+        margin-right: 5px;
+        font-size: 1rem;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 340px) {
+    #MainHolder {
+        display: none;
+    }
+
+    #circle {
+        width: 70px;
+        height: 70px;
+        display: none;
+    }
+
+    button {
+        margin: 10px;
+        font-size: 1rem;
+    }
+
+    #warn{
+        display: block;
+        text-align: center;
+        margin-top: 40vh;
+    }
+    
+}
