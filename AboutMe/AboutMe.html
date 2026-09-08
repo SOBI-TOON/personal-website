@@ -3,76 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>About Sobhan Motamedi | Full-Stack Developer &amp; Web Creator</title>
+    <meta name="title" content="About Sobhan Motamedi | Full-Stack Developer &amp; Web Creator">
+    <meta name="description" content="Learn more about Sobhan Motamedi — full-stack developer skilled in HTML, CSS, JavaScript, and Python building high-performance web and desktop applications.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/AboutMe/AboutMe.html">
 
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://yourdomain.com/AboutMe/AboutMe.html">
+    <meta property="og:title" content="About Sobhan Motamedi | Web &amp; Python Developer">
+    <meta property="og:description" content="Front-end and back-end developer making the web prettier and applications more functional.">
+    <meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/AboutMe/AboutMe.html">
+    <meta property="twitter:title" content="About Sobhan Motamedi | Web &amp; Python Developer">
+    <meta property="twitter:description" content="Front-end and back-end developer making the web prettier and applications more functional.">
+    <meta property="twitter:image" content="https://yourdomain.com/assets/og-image.jpg">
+
+    <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
 
-    <link rel="stylesheet" href="style.css">
-
-    <title>About Me</title>
+    <!-- Structured Data (Person Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Sobhan Motamedi",
+        "jobTitle": "Full-Stack Developer",
+        "knowsAbout": ["HTML5", "CSS3", "JavaScript", "Python"],
+        "url": "https://yourdomain.com/AboutMe/AboutMe.html"
+      }
+    }
+    </script>
 </head>
 
 <body>
+    <header>
+        <p class="site-title">Sobhan Motamedi</p>
+        <hr>
+    </header>
 
-    <h1>Sobhan Motamedi</h1>
+    <main>
+        <article class="bio-section">
+            <p class="tagline">Let's do this one last time...</p>
 
-    <hr>
+            <div id="RedHolder">
+                <span class="greeting">HELLO.</span>
+                <span class="sub-greeting">My name is</span>
 
-    <p>Let's do this one last time...</p>
+                <div id="WhiteHolder">
+                    <h1>Sobhan Motamedi</h1>
+                </div>
+            </div>
 
-    <div id="RedHolder">
-        <h3>HELLO.</h3>
-        <h4>My name is</h4>
+            <div id="p2">
+                <p>I'm Spider-Man by day and a developer by night.</p>
 
-        <div id="WhiteHolder">
-            <h5>Sobhan Motamedi</h5>
-        </div>
-    </div>
+                <p>I make the web prettier with <strong>HTML, CSS &amp; JavaScript</strong>.</p>
 
-    <p id="p2">
-        I'm Spider-Man by day and a developer by night.
-        <br>
-        <br>
+                <p>And I make your PCs more functional with <strong>Python</strong>.</p>
 
-        I make the web prettier with
-        "HTML, CSS &amp; JavaScript".
-        <br>
+                <p>Three years ago, I was bitten by Python. Since then, I've spent the last three years becoming a developer.</p>
 
-        And I make your PCs more functional with
-        "Python".
-        <br>
-        <br>
+                <blockquote>
+                    With great power comes great responsibility.<br>
+                    With great code comes great debugging.
+                </blockquote>
+            </div>
+        </article>
 
-        Three years ago, I was bitten by a Python.
-        Since then, I've spent the last three years
-        becoming a developer.
-        <br>
-        <br>
+        <!-- Technical Skills Section -->
+        <section id="Skill">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li class="card">
+                    <img width="60" height="60" src="https://img.icons8.com/fluency/96/html-5.png" alt="HTML5 Logo" loading="lazy">
+                    <h3>HTML5</h3>
+                </li>
+                <li class="card">
+                    <img width="60" height="60" src="https://img.icons8.com/fluency/96/css3.png" alt="CSS3 Logo" loading="lazy">
+                    <h3>CSS3</h3>
+                </li>
+                <li class="card">
+                    <img width="60" height="60" src="https://img.icons8.com/fluency/96/javascript.png" alt="JavaScript Logo" loading="lazy">
+                    <h3>JavaScript</h3>
+                </li>
+                <li class="card">
+                    <img width="60" height="60" src="https://img.icons8.com/color/96/python--v1.png" alt="Python Logo" loading="lazy">
+                    <h3>Python</h3>
+                </li>
+            </ul>
+        </section>
 
-        With great power comes great responsibility.
-        <br>
-        With great code comes great debugging.
-    </p>
-    <br><br>
-
-
-    <div id="Skill">
-        <p>theese are my skils </p>
-        <br>
-        <button class="card"><img width="60" height="60" src="https://img.icons8.com/fluency/96/html-5.png" alt="html-5"/><h4>HTML5</h4></button>
-        <button class="card"><img width="60" height="60" src="https://img.icons8.com/fluency/96/css3.png" alt="css3"/><h4>CSS style</h4></button>
-        <button class="card"><img width="60" height="60" src="https://img.icons8.com/fluency/96/javascript.png" alt="javascript"/><h4>javascript</h4></button>
-        <button class="card"><img width="60" height="60" src="https://img.icons8.com/color/96/python--v1.png" alt="python--v1"/><h4>Python</h4></button>
-
-    </div>
-
-    
-
-    <p>for contacting me tap on this button</p><br>
-    <a href="../contact_ways/urls.html"><button id="MyB">contact me</button></a>
-
-
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <p>Interested in working together or contacting me?</p>
+            <a href="../contact_ways/urls.html" id="MyB" class="btn-link">Contact Me</a>
+        </section>
+    </main>
 </body>
 </html>
